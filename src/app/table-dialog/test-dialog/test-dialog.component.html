@@ -1,0 +1,56 @@
+<mat-toolbar>
+  <span>{{form.controls['$KEY'].value?"Modify Product":"New Product"}}</span>
+  <span class="fill-remaining-space"></span>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1"><mat-icon>clear</mat-icon></button>
+</mat-toolbar>
+<form [formGroup]="form" class="normal-form" (submit)="onSubmit()">
+  <mat-grid-list cols="2" rowHeight="400px">
+    <mat-grid-tile>
+      <div class="controles-container">
+        <input type="hidden" formControlName="$KEY">
+        <mat-form-field>
+          <input formControlName="NAME" matInput placeholder="Name*">
+          <mat-error>This field is mandatory.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="CALORIES" matInput placeholder="Calories">
+          <mat-error>Invalid calories. </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="CARBS" matInput placeholder="Carbs*">
+          <mat-error *ngIf="form.controls['CARBS'].errors?.required">This field is mandatory.</mat-error>
+          <mat-error *ngIf="form.controls['CARBS'].errors?.minlength">Minimum 3 charactors needed.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="FAT" matInput placeholder="Fat">
+        </mat-form-field>
+        <mat-form-field>
+          <input formControlName="PROTEIN" matInput placeholder="Protein">
+        </mat-form-field>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+        <div class="add-bottom-padding">
+          <mat-radio-group formControlName="GENDER">
+            <mat-radio-button value="1">Male</mat-radio-button>
+            <mat-radio-button value="2">Female</mat-radio-button>
+            <mat-radio-button value="3">Other</mat-radio-button>
+          </mat-radio-group>
+        </div>
+        <mat-form-field>
+          <input formControlName="DATE" matInput [matDatepicker]="picker" placeholder="Hire Date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <div class="add-bottom-padding">
+          <mat-checkbox formControlName="IS_PERMANENT">Permanent Employee</mat-checkbox>
+        </div>
+        <div class="button-row">
+          <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid" (click)="onSubmit()">Submit</button>
+          <button mat-raised-button color="warn" (click)="onClear(); $event.preventDefault()">Clear</button>
+        </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>

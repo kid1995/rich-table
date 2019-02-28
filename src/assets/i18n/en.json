@@ -1,0 +1,484 @@
+{
+  "Dashboard": "Dashboard",
+  "Charts": "Graphen",
+  "Tables": "Tabellen",
+  "Forms": "Formulare",
+  "Bootstrap Element": "Bootstrap Element",
+  "Bootstrap Grid": "Bootstrap Grid",
+  "Component": "Komponente",
+  "Menu": "Menü",
+  "Submenu": "Submenü",
+  "Blank Page": "Leere Seite",
+  "More Theme": "Mehr Themes",
+  "Download Now": "Jetzt runterladen",
+  "Language": "Sprache",
+  "English": "Englisch",
+  "French": "Französisch",
+  "Urdu": "Urdu",
+  "Spanish": "Spanisch",
+  "Italian": "Italienisch",
+  "Farsi": "Farsi",
+  "German": "Deutsch",
+  "Simplified Chinese": "Vereinfachtes Chinesisch",
+  "Settings": "Einstellungen",
+  "Profile": "Profil",
+  "Inbox": "Posteingang",
+  "Log Out": "Ausloggen",
+  "Pending Task": "Ausstehende Aufgabe",
+  "In queue": "In der Warteschlange",
+  "Mail": "Post",
+  "View All": "Alle Anzeigen",
+
+  "NAV": {
+    "DASH_BOARD": "Dashboard",
+    "ACTIVITY_HISTORY": "Aktivitätshistorie",
+    "CUSTOMER_MANAGEMENT": "Kunden verwalten",
+    "RENTAL_PLATTFORM": "Vermietungsplattform",
+
+    "APARTMENT_REQUESTS": "Mietanfrage",
+    "WAITING_LIST": "Warteliste",
+    "APARTMENTS": "Apartments",
+    "OPTIONAL_SERVICES": "Optionale Leistungen",
+    "MOVE_IN_DATE": "Einzugstermine",
+    "SECTIONS": "Sektionen",
+    "FAQ": "FAQ",
+
+    "CUSTOMER_PORTAL": "Bewohnerportal",
+    "EVENTS": "Events",
+    "KITCHEN_EVENT": "Eventküche",
+    "TPZ_CLUB_ADVANTAGES": "TPZ Club-Vorteile",
+    "IMPORTANT_NUMBER": "Wichtige Nummern",
+    "GENERAL_INFO": "Allg. Informationen",
+    "INTERNET_ACCESS": "Internetzugang verwalten",
+
+    "MY_FILES": "Eigene Dateien",
+
+    "SETTING": "Einstellungen",
+    "CHANGE_PASSWORD": "Mein Passwort ändern",
+    "EMPLOYEE_MANAGEMENT": "Mitarbeiter verwalten (Super-Admin)",
+    "EMAIL_NOTIFICATION": "E-Mail Benachrichtigungen (Super-Admin)"
+  },
+
+  "TPZ_USER_TYPE": {
+    "CUSTOMER": "Kunde",
+    "INTERESTED_PARTIES": "Interessent"
+  },
+  "OBJECT_STATUS": {
+    "ACTIVE": "aktiv",
+    "INACTIVE": "inaktiv"
+  },
+  "PENDING_USER_REQUEST_STATUS": {
+    "OPEN": "offen",
+    "VERIFIED": "verifiziert",
+    "WAITING_DOCUMENTS": "warte auf Unterlagen",
+    "CANCELLATION": "geloescht"
+  },
+  "CONTRACT_STATUS": {
+    "SIGNED": "bestätigt",
+    "CANCELLATION": "gekündigt"
+  },
+  "CONTRACT_TYPE": {
+    "APARTMENT_CONTRACT": "Vertrag von Apartment",
+    "SERVICE_EXTRA_CONTRACT": "Vertrag von optionale Leistungen"
+  },
+  "TPZ_PRODUCT_STATUS": {
+    "AVAILABLE": "frei",
+    "UNAVAILABLE": "nicht frei",
+    "REQUESTED_AND_NONE_BLOCKED": "angefragt und nicht blockiert",
+    "REQUESTED_AND_BLOCKED": "angefragt und blockiert",
+    "RESERVED": "reserviert",
+    "CONTRACT_SIGNED": "vermietet und ungekündigt",
+    "CONTRACT_CANCELLATION": "vermietet und gekündigt",
+    "UNKNOWN_STATUS": "unbekannt"
+  },
+  "GENDER": {
+    "TEXT": "Geschlecht",
+    "MALE": "männlich",
+    "FEMALE": "weiblich"
+  },
+  "SIZE": "Größe",
+  "BUILDING_TYPE": "Gebäudeteil",
+  "FLOOR_NUMBER": "Stockwerk",
+  "BNT_GENERATE_USER_IN_CUSTOMER_PORTAL": "Konto im Bewohnerportal erzeugen",
+  "GENERATE_USER_IN_CUSTOMER_PORTAL_SUCCESS": "Das Initialpasswort für das TPZ-Bewohnerportal wurde erfolgreich generiert. Mit der E-Mail-Adresse und dem Initialpasswort, die in der Kundeninformation angezeigt werden, kann sich der Kunde jetzt im TPZ-Bewohnerportal einloggen.",
+  "GENERATE_USER_IN_CUSTOMER_PORTAL_FAIL": "Zugangsdaten konnte nicht generiert werden.",
+  "CP_ACCOUNT_FOR_EMPLOYEE_CREATION_SUCCESS": "Das Konto wurde erfolgreich erzeugt. Der Mitarbeiter/in kann sich jetzt mit seiner E-Mail-Adresse und das Initialpasswort im Bewohnerportal anmelden.",
+  "CONTRACT_ERROR_ENUM": {
+    "FROM_DATE_IS_SAME_OR_AFTER_TO_DATE": "Das Datum für Vermietungsbeginn darf nicht gleich oder hinter dem Datum für Vermietungsende liegen.",
+    "FROM_DATE_IS_BEFORE_MOVE_IN_DATE": "Das Datum für Vermietungsbeginn darf nicht vor dem Einzugstermin liegen.",
+    "TO_DATE_IS_BEFORE_FROM_DATE": "Das Datum für Vermietungsende darf nicht vor dem Datum für Vermietungsbeginn liegen.",
+    "FROM_DATE_OR_TO_DATE_NOT_SELECTED": "Vertragsbeginn und Vertragsende dürfen nicht leer sein.",
+    "TO_DATE_IS_OVERLAP_NEXT_HISTORIES": "Das Vermietungsende kann nicht ausgewählt werden. Dieses Objekt ist in diesem Zeitraum bereits besetzt.",
+    "SERVICE_EXTRA_NOT_SELECTED": "Optionale Leistung muss ausgewählt werden.",
+    "ALL_EXTRA_SERVICES_MUST_BE_SELECTED": "Alle Optionale Leistungen müssen zugeordnet werden."
+  },
+  "ACTIVITY_HISTORY": {
+    "SEND_APARTMENT_REQUEST": {
+      "TYPE_NAME": "Neue Mietanfrage",
+      "MESSAGE": "Der/die Kunde/in {{customerFullName}} hat eine Mietanfrage gesendet."
+    },
+    "SEND_WAITING_LIST_REQUEST": {
+      "TYPE_NAME": "Neue Warteliste",
+      "MESSAGE": "Der/die Kunde/in {{customerFullName}} hat eine Anfrage in Warteliste gesendet."
+    },
+    "CONFIRM_DOUBLE_OPT_IN": {
+      "TYPE_NAME": "Double-Opt-in bestätigt",
+      "MESSAGE": "Der/die Kunde/in {{customerFullName}} hat Double-Opt-in-Link bestätigt."
+    },
+    "CREATE_APARTMENT_REQUEST": {
+      "TYPE_NAME": "Mietanfrage erstellt",
+      "MESSAGE": "Die Mietanfrage wurde für {{customerFullName}} erstellt"
+    },
+    "DELETE_APARTMENT_REQUEST": {
+      "TYPE_NAME": "Mietanfrage gelöscht",
+      "MESSAGE": "Die Mietanfrage von Kunde/in den/die Kunde/in {{customerFullName}} wurde gelöscht."
+    },
+    "VERIFY_APARTMENT_REQUEST": {
+      "TYPE_NAME": "Kunden verifiziert",
+      "MESSAGE": "Der/die Kunde/in {{customerFullName}} wurde verifiziert."
+    },
+    "DELETE_WAITING_LIST": {
+      "TYPE_NAME": "Anfrage in Warteliste gelöscht",
+      "MESSAGE": "Die Mietanfrage von Kunde/in {{customerFullName}} wurde gelöscht."
+    },
+    "CREATE_CONTRACT": {
+      "TYPE_NAME": "Vertrag erstellt",
+      "MESSAGE": "Der Vertrag von Kunde/in {{customerFullName}} wurde erstellt."
+    },
+    "UPDATE_CONTRACT": {
+      "TYPE_NAME": "Vertrag aktualisiert",
+      "MESSAGE": "Die Vertragsdaten von Kunde/in {{customerFullName}} wurde aktualisiert."
+    },
+    "CANCEL_CONTRACT": {
+      "TYPE_NAME": "Vertrag gekündigt",
+      "MESSAGE": "Die Kündigung des Vertrags von Kunde/in {{customerFullName}} wurde bestätigt und das Vertragsende definiert."
+    },
+    "DELETE_CONTRACT": {
+      "TYPE_NAME": "Vertrag gelöscht",
+      "MESSAGE": "Der Vertrag von Kunde/in {{customerFullName}} wurde gelöscht."
+    },
+    "CREATE_ENTITY": {
+      "TpzUser": {
+        "TYPE_NAME": "Kunde hinzugefügt",
+        "MESSAGE": "Der/die Kunde/in {{customerFullName}} wurde hinzugefügt."
+      },
+      "ApartmentServiceExtra": {
+        "TYPE_NAME": "Produkt-Leistung hinzugefügt",
+        "MESSAGE": "Produkt-Leistung \"{{categoryName}}\" {{serviceExtraNumber}} wurde hinzugefügt."
+      },
+      "Apartment": {
+        "TYPE_NAME": "Apartment hinzugefügt",
+        "MESSAGE": "Das Apartment {{uniqueNumber}} wurde erstellt."
+      },
+      "ApMoveInDate": {
+        "TYPE_NAME": "Einzugstermin erstellt",
+        "MESSAGE": "Der Einzugstermin {{date}} wurde erstellt."
+      },
+      "PARTNER_INFO": {
+        "TYPE_NAME": "Partner erstellt",
+        "MESSAGE": "Der Partner wurde erstellt."
+      },
+      "TPZ_EVENT": {
+        "TYPE_NAME": "Event erstellt",
+        "MESSAGE": "Neu Event wurde erstellt."
+      },
+      "KITCHEN_EVENT": {
+        "TYPE_NAME": "Event erstellt",
+        "MESSAGE": "Neu Event wurde erstellt."
+      },
+      "IMPORTANT_NUMBER": {
+        "TYPE_NAME": "Nummer erstellt",
+        "MESSAGE": "Neu Nummer wurde erstellt."
+      }
+    },
+    "UPDATE_ENTITY": {
+      "TpzUser": {
+        "TYPE_NAME": "Kundeninformation aktualisiert",
+        "MESSAGE": "Die Kundeninformation von Kunde/in {{customerFullName}} wurde aktualisiert."
+      },
+      "ApartmentServiceExtra": {
+        "TYPE_NAME": "Produkt-Leistung aktualisiert",
+        "MESSAGE": "Produkt-Leistung \"{{categoryName}}\" {{serviceExtraNumber}} wurde aktualisiert."
+      },
+      "ApartmentServiceCategory": {
+        "TYPE_NAME": "Optionale Leistungen aktualisiert",
+        "MESSAGE": "Optionale Leistungen {{categoryName}} wurde aktualisiert."
+      },
+      "Apartment": {
+        "TYPE_NAME": "Apartment aktualisiert",
+        "MESSAGE": "Das Apartment {{uniqueNumber}} wurde aktualisiert."
+      },
+      "ApMoveInDate": {
+        "TYPE_NAME": "Einzugstermin aktualisiert",
+        "MESSAGE": "Der Einzugstermin {{date}} wurde aktualisiert."
+      },
+      "PARTNER_INFO": {
+        "TYPE_NAME": "Partner aktualisiert",
+        "MESSAGE": "Kooperationspartner aktualisiert."
+      },
+      "TPZ_EVENT": {
+        "TYPE_NAME": "Event aktualisiert",
+        "MESSAGE": "Event aktualisiert."
+      },
+      "KITCHEN_EVENT": {
+        "TYPE_NAME": "Event aktualisiert",
+        "MESSAGE": "EventKüche aktualisiert."
+      },
+      "IMPORTANT_NUMBER": {
+        "TYPE_NAME": "Nummer aktualisiert",
+        "MESSAGE": "Wichtige Nummer aktualisiert."
+      }
+    },
+    "DELETE_ENTITY": {
+      "TpzUser": {
+        "TYPE_NAME": "Kunde gelöscht",
+        "MESSAGE": "Der/die Kunde/in {{customerFullName}} wurde gelöscht."
+      },
+      "ApartmentServiceExtra": {
+        "TYPE_NAME": "Produkt-Leistung gelöscht",
+        "MESSAGE": "Produkt-Leistung \"{{categoryName}}\" {{serviceExtraNumber}} wurde gelöscht."
+      },
+      "Apartment": {
+        "TYPE_NAME": "Apartment gelöscht",
+        "MESSAGE": "Das Apartment {{uniqueNumber}} wurde gelöscht."
+      },
+      "ApMoveInDate": {
+        "TYPE_NAME": "Einzugstermin gelöscht",
+        "MESSAGE": "Der Einzugstermin {{date}} wurde gelöscht."
+      },
+      "PARTNER_INFO": {
+        "TYPE_NAME": "Partner gelöscht",
+        "MESSAGE": "Partner wurde gelöscht."
+      },
+      "TPZ_EVENT": {
+        "TYPE_NAME": "Event gelöscht",
+        "MESSAGE": "Event wurde gelöscht."
+      },
+      "KITCHEN_EVENT": {
+        "TYPE_NAME": "Event gelöscht",
+        "MESSAGE": "Event wurde gelöscht."
+      },
+      "IMPORTANT_NUMBER": {
+        "TYPE_NAME": "Nummer gelöscht",
+        "MESSAGE": "Nummer wurde gelöscht."
+      }
+    }
+  },
+  "JOB_TYPE": {
+    "STUDENT": "Studierend",
+    "EMPLOYED": "Angestellt",
+    "FREELANCER": "Selbstständig",
+    "OTHER": "Sonstiges"
+  },
+  "UNDER_PRICE_1200": "unter 1200 ",
+  "OVER_PRICE_2000": "über 2000",
+  "SEARCH": "Suchen",
+  "ADD": "Hinzufügen",
+  "BACK": "Zurück",
+  "ABORT": "Abbrechen",
+  "SAVE": "Speichern",
+  "SAVE_AND_CONTINUE_EDIT": "Speichern und weiter bearbeiten",
+  "EDIT": "Bearbeiten",
+  "UPDATE": "Aktualisieren",
+  "DELETE": "Löschen",
+  "USER_NAME": "Benutzername",
+  "FIRST_NAME": "Vorname",
+  "LAST_NAME": "Nachname",
+  "EMAIL": "E-Mail",
+  "NO_EMAIL_EXISTS": "Keine E-Mail vorhanden.",
+  "SELECT": "auswählen",
+  "LOGIN": "Anmelden",
+  "DATE_OF_BIRTH": "Geburtsdatum",
+  "TELEPHONE_NUMBER": "Telefonnr.",
+  "CUSTOMER_NUMBER": "Kundennummer",
+  "COMPONENTS": {
+    "USER_PROFILE": "Mein Passwort ändern",
+    "EMPLOYEE_MANAGEMENT": "Mitarbeiter verwalten",
+    "EMAIL_MANAGEMENT": "E-Mail verwalten"
+  },
+  "PASSWORD": {
+    "TEXT": "Passwort",
+    "CHANGE_PASSWORD": "Passwort ändern",
+    "CURRENT_PASSWORD": "Aktuelles Passwort",
+    "NEW_PASSWORD": "Neues Passwort",
+    "RE_PASSWORD": "Passwort wiederholen",
+    "RE_PASSWORD_NOT_CORRECT": "Die angegebenen Passwörter stimmen nicht überein.",
+    "CHANGED_SUCCESS_MSG": "Ihr Passwort wurde erfolgreich geändert.",
+    "CHANGED_FAILED_MSG": "'Ihr Passwort konnte nicht geändert werden.",
+    "OLD_PASSWORD_INCORRECT": "Das aktuelle Passwort stimmt nicht überein."
+  },
+  "EMPLOYEE_MANAGEMENT": {
+    "EMPLOYEE_PROFILE": "Mitarbeiter Profil",
+    "CARD_HEADER_TITLE": "Mitarbeiter",
+    "CREATE_BUTTON": "Mitarbeiter hinzufügen",
+    "LOAD_EMPLOYEE_PROFILE_FAILED_MSG": "Mitarbeiter {{username}} existiert nicht mehr.",
+    "CREATE_PROFILE_SUCCESS_MSG": "Mitarbeiter {{firstName}} {{lastName}} wurde erfolgreich hinzugefügt.",
+    "CREATE_PROFILE_FAILED_MSG": "Mitarbeiter {{firstName}} {{lastName}} wurde nicht erfolgreich hinzugefügt.",
+    "UPDATE_PROFILE_SUCCESS_MSG": "Mitarbeiter {{firstName}} {{lastName}} wurde erfolgreich aktualisiert.",
+    "UPDATE_PROFILE_FAILED_MSG": "Mitarbeiter {{firstName}} {{lastName}} wurde nicht erfolgreich aktualisiert.",
+    "DELETE_PROFILE_SUCCESS_MSG": "Mitarbeiter {{firstName}} {{lastName}} wurde erfolgreich gelöscht.",
+    "DELETE_PROFILE_FAILED_MSG": "Mitarbeiter {{firstName}} {{lastName}} wurde nicht erfolgreich gelöscht.",
+    "DELETE_WARNING_MSG": "Möchten Sie wirklich das Konto für Mitarbeiter {{firstName}} {{lastName}} löschen?"
+  },
+  "NOTIFICATION_EMAIL_TYPE": {
+    "TPZ_SEND_NOTIFICATION_EMAIL": "Systembenachrichtigung",
+    "TPZ_CUSTOMER_SEND_EMAIL": "Mietanfrage/Warteliste"
+  },
+  "NOTIFICATION_EMAIL_MANAGEMENT": {
+    "SEND_TEST_EMAIL": "Test-E-Mail an alle senden",
+    "CARD_HEADER_TITLE": "Benachrichtigungstyp:",
+    "DESCRIPTION": "E-Mails mit Anfragen (Mietanfrage und Warteliste) oder mit Systembenachrichtigungen können an DEMIWO-E-Mail-Adressen in der E-Mail-Liste verschickt werden.",
+    "REMOVE_EMAIL_HEADER_TITLE": "Möchten Sie wirklich diese E-Mail-Adresse entfernen?",
+    "SUCCESS_CREATE": "E-Mail-Adresse wurde erfolgreich hinzugefügt.",
+    "SUCCESS_UPDATE": "E-Mail-Adresse wurde erfolgreich geändert.",
+    "SUCCESS_DELETE": "E-Mail-Adresse wurde erfolgreich gelöscht.",
+    "FAILED_CREATE": "E-Mail-Adresse wurde erfolgreich hinzugefügt.",
+    "FAILED_UPDATE": "E-Mail-Adresse wurde erfolgreich geändert.",
+    "FAILED_DELETE": "E-Mail-Adresse wurde erfolgreich gelöscht.",
+    "FAILED_DELETE_LAST_TARGET_EMAIL": "E-Mail-Adresse kann nicht gelöscht werden. Die E-Mail-Liste darf nicht leer sein.",
+    "SUCCESS_SEND_TEST_MAIL": "Test-E-Mail wurde an {{emailList}} erfolgreich gesendet.",
+    "FAILED_SEND_TEST_MAIL": "Test-E-Mail kann nicht gesendet werden. Bitte überprüfen Sie die Konfigurationen."
+  },
+  "SUPER_ADMIN_LOGIN_FORM": {
+    "DESCRIPTION": "Diese Funktionen sind administrative Funktionen.<br/>Für den Zugriff auf diese Funktionen benötigen Sie die Super-Admin-Berechtigung.<br/>Geben Sie bitte Ihr Passwort ein, um Ihre Super-Admin-Berechtigung zu bestätigen.",
+    "LOGIN_SUCCESS_MSG": "Login war erfolgreich",
+    "LOGIN_FAILED_MSG": "Login war nicht erfolgreich",
+    "USERNAME_OR_PASSWORD_INCORRECT": "Das eingegebene Passwort ist nicht korrekt.",
+    "PERMISSION_DENIED": "Sie haben keine Super-Admin-Berechtigung."
+  },
+  "TPZ_CLUB_ADVANTAGE": {
+    "NAME": "TPZ Club-Vorteile",
+    "PARTNER": "Kooperationspartner",
+    "REMOVE_HEADER_TITLE": "Möchten Sie wirklich diesen Kooperationspartner löschen?"
+  },
+  "KITCHEN_EVENT": {
+    "NAME": "Eventküche",
+    "SUCESSFULLY_UPDATED": "Event Status wurde erfolgereich aktualisiert",
+    "REMOVE_HEADER_TITLE": "Möchten Sie wirklich diesen Event löschen?"
+  },
+  "IMPORTANT_NUMBER": {
+    "NAME": "Wichtige Nummer",
+    "SEARCH_LABEL": "Titel und Nummer suchen",
+    "REMOVE_HEADER_TITLE": "Möchten Sie wirklich diese Nummer löschen?"
+  },
+  "EVENTS": {
+    "NAME": "Events",
+    "REMOVE_HEADER_TITLE": "Möchten Sie wirklich diesen Event löschen?",
+    "ADD_EVENT": "Event hinzufügen",
+    "EDIT_EVENT": "Event bearbeiten"
+  },
+
+  "EVENT": "Event",
+
+  "BY": "Durch",
+  "SEARCH_BY_ORGANIZER": "Name des Veranstalters:",
+  "SEARCH_BY_ORGANIZER_ERR": "Name des Veranstalters eingeben.",
+  "SELECT_YEAR": "Jahr auswählen",
+  "SELECT_MONTH": "Monat auswählen",
+  "NO_RESULT": "Kein Ergebnis vorhanden",
+
+  "CONFIRMED": "Bestätigt",
+  "CANCELLED": "Abgesagt",
+  "OPEN": "Offen",
+  "RESERVED": "Reserviert",
+  "REQUESTED": "Angefragt",
+  "PARTNER": "Partner",
+  "PARTNER_NAME": "Partner Name",
+  "NAME": "Name",
+  "TITLE": "Titel",
+  "ADRESSE": "Adresse",
+  "WEBSITE": "Webseite",
+  "DESCRIPTION": "Beschreibung",
+  "ORGANIZER": "Veranstalter",
+  "DATE": "Datum",
+  "TIME": "Uhrzeit",
+
+  "YEAR": "Jahr ",
+  "MONTH": "Monate ",
+  "STATUS": "Status",
+  "NUMBER": "Nummer",
+  "PLACE": "Ort",
+
+  "PLACE_HOLDER": {
+    "DESCRIPTION": "Beschreibung",
+    "TITLE": "Titel",
+    "TITLE_NUMBER": "Title, Nummer"
+  },
+
+  "GENERAL_INFO": {
+    "LABEL": "Allgemeine Informationen",
+    "LABEL_SHORT": "Allg. Informationen",
+    "DOCUMENTS": "Dokumente",
+    "CREATE_SUCCESS_MSG": "Objekt wurde erfolgreich hinzugefügt.",
+    "CREATE_FAILURE_MSG": "Objekt wurde nicht erfolgreich hinzugefügt.",
+    "DELETE_SUCCESS_MSG": "Objekt wurde erfolgreich gelöscht.",
+    "DELETE_FAILURE_MSG": "Objekt wurde nicht erfolgreich gelöscht."
+  },
+
+  "FORM_ERROR": {
+    "TITLE_REQUIRED": "Titel muss eingegeben werden.",
+    "DESCRIPTION_REQUIRED": "Beschreibung muss eingegeben werden.",
+    "FILES_REQUIRED": "Datei muss hinzugefügt werden."
+  },
+
+  "MODAL": {
+    "DELETE_CONFIRM": {
+      "TITLE": "Löschen bestätigen",
+      "MESSAGE": "Möchten Sie wirklich dieses Objekt löschen?"
+    }
+  },
+
+  "VALIDATION": {
+    "REQUIRED": " muss eingegeben werden.",
+    "MIN_LENGTH": " muss mehr als ",
+    "MAX_LENGTH": " muss weniger als ",
+    "CHARACTER": " Zeichen haben.",
+    "INVALID_PATTERN": " ist nicht ein richtige ",
+    "NUMBER_PATTERN": " es muss so sein: XXXX / XXX XXX XX",
+    "WEBSITE_PATTERN": " Webseite "
+  },
+
+  "CUSTOMER_ACCESS_DATA": {
+    "LABEL": "Internetzugang verwalten",
+    "EDIT_MODAL_TITLE": "Internetzugang bearbeiten",
+    "ACCESS_DATA": "Internetzugang",
+    "NETWORK_NAME": "Netzwerkname",
+    "SECRET_NAME": "Benutzername",
+    "NETWORK_KEY": "Passwort",
+    "SECRET_NAME_REQUIRED": "Netzwerkname darf nicht leer sein.",
+    "SECRET_KEY_REQUIRED": "Das Passwort des Netzwerks darf nicht leer sein.",
+    "UPDATE_SUCCESS": "Internetzugang für Kunde {{fullName}} wurde erfolgreich aktualisiert.",
+    "UPDATE_FAILURE": "Internetzugang für Kunde {{fullName}} wurde nicht erfolgreich aktualisiert."
+  },
+
+  "GENERAL_TOAST_MSG": {
+    "CREATE_SUCCESS": "Objekt wurde erfolgreich hinzugefügt.",
+    "CREATE_FAILURE": "Objekt konnte nicht hinzugefügt werden.",
+    "UPDATE_SUCCESS": "Änderung wurde erfolgreich aktualisiert.",
+    "UPDATE_FAILURE": "Änderung konnte nicht aktualisiert werden.",
+    "DELETE_SUCCESS": "Objekt wurde erfolgreich gelöscht.",
+    "DELETE_FAILURE": "Objekt konnte nicht gelöscht werden."
+  },
+
+  "APARTMENT_REQUEST": "Mietanfrage",
+  "MOVE_IN_DATE": "Einzugstermin",
+  "APARTMENT": "Apartment",
+  "OPTIONAL_SERVICE": "Optionale Leistung",
+  "NOT_SELECTABLE_CAUSE_OF_UNSELECTED_MOVE_IN_DATE": "Keine Auswahl möglich. Wählen Sie zuerst einen Einzugstermin aus.",
+  "FREE": "frei",
+
+  "BUTTON": {
+    "ABORT": "Abbrechen",
+    "CREATE": "Erstellen"
+  },
+
+  "FILTER": {
+    "CUSTOMER_SEARCH": "Kunde suchen",
+    "CUSTOMER_SEARCH_PLACE_HOLDER": "Kundenname eingeben"
+  },
+
+  "CP_PORTAL": {
+    "INITIAL_PASSWORD": "Initialpasswort für Bewohnerportal: <b>tpz2018</b>"
+  }
+}
+
